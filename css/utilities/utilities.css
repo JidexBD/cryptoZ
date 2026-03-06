@@ -1,0 +1,51 @@
+.pry-btn {
+  background-color: var(--bc);
+  color: var(--w);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.pry-btn:hover,
+.pry-btn:active {
+  background-color: transparent;
+  color: var(--bc);
+  border: 1px solid var(--bc);
+  transform: scale(1.04);
+}
+
+.outline-btn {
+  background-color: transparent;
+  color: var(--pb);
+  border: 1px solid var(--pb);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.outline-btn:hover,
+.outline-btn:active {
+  background-color: var(--bc);
+  color: var(--w);
+  transform: scale(1.04);
+}
+
+/* nav-btn  mobile*/
+.pry-btn-mobile {
+  background-color: var(--w);
+  color: var(--bc);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  padding: 1rem 2rem;
+}
+
+.pry-btn-mobile:hover,
+.pry-btn-mobile:active {
+  background-color: var(--db);
+  color: var(--w);
+  border: none;
+  transform: scale(1.04);
+}
