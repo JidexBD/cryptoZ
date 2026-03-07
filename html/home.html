@@ -24,10 +24,49 @@
     <link rel="stylesheet" href="/css/utilities/variables.css" />
     <link rel="stylesheet" href="/css/utilities/base.css" />
     <link rel="stylesheet" href="/css/utilities/utilities.css" />
+    <link rel="stylesheet" href="/css/home/header.css" />
   </head>
 
   <body>
     <div id="nav-wrapper"></div>
+
+    <header>
+      <div class="left">
+        <h2>
+          Your all-in-one platform to buy, sell, trade, and earn
+          Cryptocurrencies
+        </h2>
+        <p>
+          Open a free account in minutes right from your phone and make your
+          money go further
+        </p>
+
+        <div class="input-container">
+          <input type="email" id="header-email" placeholder="Enter Address" />
+
+          <button class="header-btn pry-btn">Get Started</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="currency-container">
+          <form id="converter-form">
+            <div class="input-container">
+              <label for="amount"></label>
+              <input type="number" id="amount" />
+            </div>
+            <div class="input-container">
+              <label for="amont"></label>
+            </div>
+            <div class="input-container">
+              <label for="amont"></label>
+            </div>
+
+            <button type="submit">Convert</button>
+          </form>
+          <div id="result"></div>
+        </div>
+      </div>
+    </header>
 
     <!-- footer? -->
     <div id="footer-container"></div>
