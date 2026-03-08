@@ -1,274 +1,83 @@
 header {
-  padding: 2rem;
   background: linear-gradient(
     to bottom,
     rgba(39, 82, 231, 1),
     rgba(11, 34, 113, 1)
   );
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
-
   position: relative;
+  overflow: hidden;
 }
 
-.left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+#nav-wrapper {
+  z-index: 1000;
 }
-
-.left h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
-  line-height: 125%;
-  animation: moveInLeft 3s;
-}
-
-.left p {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1.6rem;
-  text-align: center;
-  animation: moveInRight 3s;
-}
-
-.input-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  animation: moveUp 3s;
-}
-
-.input-container input {
-  padding: 1.5rem 6rem;
-  border-radius: 8px;
-  border: none;
-}
-
-.input-container .header-btn {
-  padding: 1.5rem 6rem;
-  font-size: 1.6rem;
-}
-
-
-
 
 /* decoration */
-.dec1 {
+header .dec1 {
   position: absolute;
-  top: 50;
-  left: 0;
-  transform: rotate(-14.21deg);
+  top: 100px;
+  left: 40px;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/Ellipse74.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   z-index: 0;
-  margin-bottom: 20rem;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.dec2 {
+header .dec2 {
   position: absolute;
-  top: 50;
-  left: 0;
-  transform: rotate(-14.21deg);
+  top: 120px;
+  left: 40px;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/Ellipse75.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   z-index: 0;
-  margin-bottom: 20rem;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.dec3 {
+header .dec3 {
   position: absolute;
-  top: 50;
-  left: 0;
-  transform: rotate(-14.21deg);
+  top: 180px;
+  left: 40px;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/Ellipse76.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   z-index: 0;
-  margin-bottom: 20rem;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-#et,
-#bit {
+/* coin */
+
+header .coin1 {
+  position: absolute;
+  top: 180px;
+  left: 40px;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/export/Coin/BitCoin/Cam2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+  overflow: hidden;
   display: none;
 }
 
-
-/* to prevent decorative images from blocking clicks  */
-.dec1,
-.dec2,
-.dec3,
-#bit,
-#et {
-  pointer-events: none;
+header .coin2 {
+  position: absolute;
+  top: 180px;
+  left: 40px;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/export/Coin/Ethereum/Cam2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+  overflow: hidden;
+  display: none;
 }
-
-
-
-/* animations */
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  80% {
-    opacity: 1;
-    transform: translateX(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  80% {
-    opacity: 1;
-    transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-
-/* right */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@keyframes moveUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-/* tab */
-@media (min-width: 768px) {
-  .left h2 {
-    font-size: 3.8rem;
-    font-weight: 700;
-    text-align: center;
-    line-height: 125%;
-    animation: moveInLeft 3s;
-  }
-
-  .left p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1.8rem;
-    text-align: center;
-    animation: moveInRight 3s;
-  }
-
-  .input-container input {
-    padding: 1.8rem 6.8rem;
-    border-radius: 8px;
-    border: none;
-  }
-
-  .input-container .header-btn {
-    padding: 1.8rem 6.5rem;
-    font-size: 1.6rem;
-  }
-}
-
-/* 1024 */
-@media (min-width: 1280px) {
-  header {
-    padding: 2rem;
-    background: linear-gradient(
-      to bottom,
-      rgba(39, 82, 231, 1),
-      rgba(11, 34, 113, 1)
-    );
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-  
-    position: relative;
-  }
-  
-
-  
-.left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.left h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
-  line-height: 125%;
-  animation: moveInLeft 3s;
-}
-
-.left p {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1.6rem;
-  text-align: center;
-  animation: moveInRight 3s;
-}
-
-.input-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  animation: moveUp 3s;
-}
-
-.input-container input {
-  padding: 1.5rem 6rem;
-  border-radius: 8px;
-  border: none;
-}
-
-.input-container .header-btn {
-  padding: 1.5rem 6rem;
-  font-size: 1.6rem;
-}
-
-
-
-}
-
-/* 1440 */
-@media (min-width: 1440px) {
-}
-
-/* 1800 */
-@media (min-width: 1800px) {
-}*/
