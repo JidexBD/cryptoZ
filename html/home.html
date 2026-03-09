@@ -52,19 +52,33 @@
         </div>
         <div class="right">
           <div class="currency-container">
+            <!-- container of our form -->
+            <h2>Currency Converter</h2>
+
             <form id="converter-form">
               <div class="input-container">
-                <label for="amount"></label>
-                <input type="number" id="amount" />
+                <label for="amount">Amount</label>
+                <input
+                  type="number"
+                  id="amount"
+                  placeholder="Enter Amount"
+                  required
+                />
               </div>
               <div class="input-container">
-                <label for="amont"></label>
+                <label for="from">From</label>
+                <select id="from">
+                  <!-- options will load here from api -->
+                </select>
               </div>
               <div class="input-container">
-                <label for="amont"></label>
+                <label for="to">To</label>
+                <select id="to">
+                  <!-- options will load here from api -->
+                </select>
               </div>
 
-              <button type="submit">Convert</button>
+              <button type="submit" class="btn-form pry-btn">Convert</button>
             </form>
             <div id="result"></div>
           </div>
