@@ -149,6 +149,11 @@ select:focus {
   color: var(--hc);
 }
 
+#result {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
 /* tab */
 @media (min-width: 768px) {
   .left h2 {
