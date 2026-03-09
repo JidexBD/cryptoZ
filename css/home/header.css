@@ -6,7 +6,7 @@ header {
   );
   position: relative;
   overflow: hidden;
-  height: 150vh;
+  min-height: 100vh;
 
   margin-bottom: 10rem;
 }
