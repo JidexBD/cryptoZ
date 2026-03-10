@@ -129,12 +129,11 @@ header .dec3 {
     min-height: 100vh;
     position: relative;
     color: var(--w);
-    min-height: 120vh;
   }
 
   .eth {
     position: absolute;
-    bottom: 0px;
+    bottom: 170px;
     left: 1250px;
     display: block;
     z-index: 10;
@@ -142,7 +141,7 @@ header .dec3 {
 
   .btc {
     position: absolute;
-    bottom: 450px;
+    bottom: 670px;
     left: 1600px;
     display: block;
     z-index: 1;
