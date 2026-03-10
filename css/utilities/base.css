@@ -16,7 +16,7 @@ body {
   font-size: 1.6rem;
 }
 
-image {
+img {
   max-width: 100%;
   height: auto;
 }
@@ -27,7 +27,6 @@ a {
 }
 
 li {
-  font-size: var();
   list-style: none;
 }
 

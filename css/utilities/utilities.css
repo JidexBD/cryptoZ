@@ -17,8 +17,8 @@
 
 .outline-btn {
   background-color: transparent;
-  color: var(--pb);
-  border: 1px solid var(--pb);
+  color: var(--db);
+  border: 1px solid var(--db);
   border-radius: 10px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
