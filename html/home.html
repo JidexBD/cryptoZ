@@ -31,6 +31,78 @@
   <body>
     <div id="nav-wrapper"></div>
 
+    <header>
+      <div class="hero-section">
+        <!-- left -->
+        <div class="left-hero">
+          <div class="left-top">
+            <h2>
+              Your all-in-one platform to buy, sell, trade, and earn
+              Cryptocurrencies
+            </h2>
+            <p>
+              Open a free account in minutes right from your phone and make your
+              money go further
+            </p>
+          </div>
+          <div class="left-bottom">
+            <input type="email" id="mail" placeholder="Enter email...." />
+            <button type="submit" class="pry-btn">Get Started</button>
+          </div>
+        </div>
+
+        <!-- right -->
+        <div class="right-hero">
+          <div class="currency-container">
+            <!-- container of our form -->
+            <h2>Currency Converter</h2>
+
+            <form id="converter-form">
+              <div class="input-container">
+                <label for="amount">Amount</label>
+                <input
+                  type="number"
+                  id="amount"
+                  placeholder="Enter Amount"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                <label for="from">From</label>
+                <select id="from">
+                  <!-- options will load here from api -->
+                </select>
+              </div>
+              <div class="input-container">
+                <label for="to">To</label>
+                <select id="to">
+                  <!-- options will load here from api -->
+                </select>
+              </div>
+
+              <button type="submit" class="btn-form pry-btn">Convert</button>
+            </form>
+            <div id="result"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dec1"></div>
+      <div class="dec2"></div>
+      <div class="dec3"></div>
+
+      <img
+        src="/assets/images/export/Coin/BitCoin/Cam2.png"
+        alt="BitCoin"
+        class="btc"
+      />
+      <img
+        src="/assets/images/export/Coin/Ethereum//Cam1.png"
+        alt="Ethereum"
+        class="eth"
+      />
+    </header>
+
     <!-- footer -->
     <div id="footer-container"></div>
     <!-- js -->
