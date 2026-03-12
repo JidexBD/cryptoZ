@@ -24,6 +24,7 @@ header .dec3 {
   width: 1000px;
   height: 1000px;
   background-size: contain;
+
   background-repeat: no-repeat;
   z-index: 0;
   pointer-events: none;
