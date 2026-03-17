@@ -1,0 +1,127 @@
+.get-started {
+  padding: 3rem;
+  background-color: var(--lb);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.started-top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.started-top h2 {
+  font-size: 3.2rem;
+  color: var(--hc);
+}
+
+.started-top p {
+  font-size: 1.8rem;
+}
+
+.started-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bottom-card {
+  background-color: var(--w);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: scale 0.5 ease-in-out;
+}
+
+.bottom-card:hover,
+.bottom-card:active {
+  transform: scale(1.05);
+}
+
+/* tab */
+@media (min-width: 768px) {
+  .bottom-card {
+    max-width: 400px;
+    align-self: center;
+  }
+}
+
+/* 1024 */
+@media (min-width: 1280px) {
+  .started-top h2 {
+    font-size: 4.8rem;
+    color: var(--hc);
+    letter-spacing: -3.6px;
+    max-width: 400px;
+  }
+
+  .started-top p {
+    font-size: 1.8rem;
+  }
+
+  .started-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .get-started {
+    padding: 3rem 5rem;
+    background-color: var(--lb);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+  }
+
+  .started-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .started-bottom h3 {
+    font-size: 2.4rem;
+  }
+
+  .started-bottom p {
+    font-size: 1.6rem;
+  }
+}
+
+/* 1440 */
+@media (min-width: 1440px) {
+}
+
+/* 1800 */
+@media (min-width: 1800px) {
+  .started-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2rem;
+    padding: 4rem 6rem;
+  }
+
+  .bottom-card {
+    background-color: var(--w);
+    padding: 3rem 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: scale 0.5 ease-in-out;
+  }
+}
