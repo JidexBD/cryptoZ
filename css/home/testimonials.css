@@ -1,0 +1,66 @@
+:root {
+  --card_width: 250px;
+  --card_border_raduis: 16px;
+  --row_increment: 10px;
+  --card_small: 26;
+  --card_meduim: 22;
+  --card_large: 45;
+}
+
+.testimonials {
+  padding: 3rem;
+  margin-bottom: 40rem;
+}
+
+.testimonial-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.testimonial-header h2 {
+  font-size: 3.2rem;
+  text-align: center;
+  width: 200px;
+  color: var(--hc);
+}
+
+.testimonial-container {
+  width: 80vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--card_width));
+  grid-auto-rows: var(--row_increment);
+  justify-content: center;
+}
+
+/* card */
+.card {
+  padding: 1rem;
+  margin: 15px 10px;
+  border-radius: var(--card_border_raduis);
+  border: 1px solid var(--wbt);
+  min-height: 250px;
+}
+
+.test-card-top {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.txt-box h4 {
+  font-size: 2rem;
+}
+
+.txt-box p {
+  font-size: 1rem;
+}
+
+.test-card-down p {
+  font-size: 1.4rem;
+}
