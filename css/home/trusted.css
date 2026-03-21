@@ -127,3 +127,19 @@
     max-width: 60rem;
   }
 }
+
+@media (min-width: 1920px) {
+  .trusted-right {
+    max-width: 150rem;
+  }
+
+  .trusted-left {
+    padding: 2rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 6rem;
+    max-width: 60rem;
+    margin-left: 18rem;
+  }
+}
