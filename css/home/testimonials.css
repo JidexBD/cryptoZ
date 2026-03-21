@@ -27,7 +27,7 @@
 /* tab */
 @media (min-width: 768px) {
   .testimonial-one h2 {
-    font-size: 4.2rem;
+    font-size: 3.8rem;
     text-align: center;
     color: var(--hc);
   }
@@ -35,12 +35,10 @@
 
 /* 1024 */
 @media (min-width: 1280px) {
-  @media (min-width: 768px) {
-    .testimonial-one h2 {
-      font-size: 3.8rem;
-      text-align: center;
-      color: var(--hc);
-    }
+  .testimonial-one h2 {
+    font-size: 4.8rem;
+    text-align: center;
+    color: var(--hc);
   }
 }
 
