@@ -42,14 +42,6 @@
   }
 }
 
-/* 1440 */
-@media (min-width: 1440px) {
-}
-
-/* 1800 */
-@media (min-width: 1800px) {
-}
-
 /* section2 */
 
 .testimonials {
@@ -105,6 +97,6 @@
     column-count: 1;
   }
   .tc {
-    visibility: hidden;
+    visibility: collapse;
   }
 }
