@@ -125,3 +125,13 @@
     transition: scale 0.5 ease-in-out;
   }
 }
+
+@media (min-width: 1920px) {
+  .started-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2rem;
+    padding: 8rem 6rem;
+    margin-left: 4rem;
+  }
+}
