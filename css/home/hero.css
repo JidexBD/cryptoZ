@@ -331,3 +331,36 @@ select:focus {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
 }
+
+/* 1920 */
+@media (min-width: 1920px) {
+  .left-top h2 {
+    font-size: 8rem;
+    text-align: left;
+    line-height: 120%;
+    animation: moveInLeft 3s;
+    max-width: 70rem;
+  }
+
+  .left-top p {
+    font-size: 3rem;
+    max-width: 1280px;
+    text-align: left;
+    line-height: 120%;
+    animation: moveInRight 3s;
+    max-width: 65rem;
+  }
+
+  .left-bottom input {
+    padding: 2rem 12rem;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .left-bottom button {
+    padding: 2rem 6rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 2rem;
+  }
+}
