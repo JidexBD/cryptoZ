@@ -1,66 +1,112 @@
-:root {
-  --card_width: 250px;
-  --card_border_raduis: 16px;
-  --row_increment: 10px;
-  --card_small: 26;
-  --card_meduim: 22;
-  --card_large: 45;
-}
+/* section1 */
 
-.testimonials {
+.testimonial-one {
   padding: 3rem;
-  margin-bottom: 40rem;
-}
-
-.testimonial-header {
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
+  position: relative;
+  z-index: 10;
 }
 
-.testimonial-header h2 {
+.testimonial-one h2 {
   font-size: 3.2rem;
   text-align: center;
-  width: 200px;
   color: var(--hc);
 }
 
-.testimonial-container {
-  width: 80vw;
+.test-deco {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: grid;
-  grid-template-columns: repeat(auto-fill, var(--card_width));
-  grid-auto-rows: var(--row_increment);
-  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
-/* card */
+/* tab */
+@media (min-width: 768px) {
+  .testimonial-one h2 {
+    font-size: 4.2rem;
+    text-align: center;
+    color: var(--hc);
+  }
+}
+
+/* 1024 */
+@media (min-width: 1280px) {
+  @media (min-width: 768px) {
+    .testimonial-one h2 {
+      font-size: 3.8rem;
+      text-align: center;
+      color: var(--hc);
+    }
+  }
+}
+
+/* 1440 */
+@media (min-width: 1440px) {
+}
+
+/* 1800 */
+@media (min-width: 1800px) {
+}
+
+/* section2 */
+
+.testimonials {
+  max-width: 1224px;
+  width: 90%;
+  margin: auto;
+  padding: 4rem 0;
+}
+
+.testimonial-grid {
+  column-count: 4;
+  column-gap: 2rem;
+}
+
+.testimonial-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .card {
   padding: 1rem;
-  margin: 15px 10px;
-  border-radius: var(--card_border_raduis);
+  border-radius: 12px;
   border: 1px solid var(--wbt);
-  min-height: 250px;
+  break-inside: avoid;
+  margin-bottom: 2rem;
 }
 
 .test-card-top {
   display: flex;
-  gap: 2rem;
-  margin-bottom: 0.8rem;
+  gap: 1.5rem;
 }
 
-.txt-box h4 {
-  font-size: 2rem;
+@media (max-width: 1024px) {
+  .testimonial-grid {
+    column-count: 3;
+  }
+  .tc {
+    visibility: visible;
+  }
+}
+@media (max-width: 768px) {
+  .testimonial-grid {
+    column-count: 2;
+  }
+  .tc {
+    visibility: visible;
+  }
 }
 
-.txt-box p {
-  font-size: 1rem;
-}
-
-.test-card-down p {
-  font-size: 1.4rem;
+@media (max-width: 480px) {
+  .testimonial-grid {
+    column-count: 1;
+  }
+  .tc {
+    visibility: hidden;
+  }
 }
