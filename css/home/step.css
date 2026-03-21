@@ -158,3 +158,29 @@
     width: 7%;
   }
 }
+
+@media (min-width: 1920px) {
+  .bti {
+    top: 8px;
+    right: 900px;
+    position: absolute;
+    display: block;
+    width: 5%;
+  }
+
+  .ethi {
+    top: 155px;
+    right: 780px;
+    position: absolute;
+    display: block;
+    width: 4%;
+  }
+
+  .lunna {
+    top: 220px;
+    right: 920px;
+    position: absolute;
+    display: block;
+    width: 4%;
+  }
+}
